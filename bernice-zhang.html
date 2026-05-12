@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bernice Zhang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Noto+Serif+SC:wght@300;400&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="bernice-zhang.css">
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor-dot" id="cursor"></div>
+
+<!-- ══ NAV ══════════════════════════════════════════════════ -->
+<nav>
+  <a class="nav-logo" href="#hero">
+    <div class="nav-logo-inner">
+      <span data-en>( Bernice Zhang )</span>
+      <span data-zh>（　張　智　珺　）</span>
+      <!-- Always show the flip animation span pair -->
+      <span style="display:none">placeholder</span>
+    </div>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#about"      data-en>About</a>      <a href="#about"      data-zh>關於</a></li>
+    <li><a href="#projects"   data-en>Projects</a>   <a href="#projects"   data-zh>作品</a></li>
+    <li><a href="#experience" data-en>Experience</a> <a href="#experience" data-zh>經歷</a></li>
+    <li><a href="#contact"    data-en>Contact</a>    <a href="#contact"    data-zh>聯絡</a></li>
+  </ul>
+
+  <div class="nav-controls">
+    <!-- Language toggle -->
+    <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN / 中</button>
+    <!-- Day / Night toggle -->
+    <button class="mode-toggle" id="modeToggle" aria-label="Toggle day/night mode">☽</button>
+  </div>
+</nav>
+
+<!-- ══ HERO ══════════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="section-inner">
+
+    <div class="hero-number">I.</div>
+
+    <!-- English hero name -->
+    <h1 class="hero-name-en" data-en>
+      I'm
+      <span class="hero-name-flip" id="nameFlip">
+        <span class="hero-name-flip-inner">
+          <span class="name-en-face">Bernice</span>
+          <span class="name-zh-face">Zhìjùn</span>
+        </span>
+      </span>
+      Zhang.
+    </h1>
+
+    <!-- Chinese hero name — static, no flip -->
+    <h1 class="hero-name-en" data-zh>
+      我是張智珺。
+    </h1>
+
+    <!-- Tagline -->
+    <p class="hero-tagline">
+      <span data-en>Build with clarity. Create with purpose.</span>
+      <span data-zh>以清醒之心構建，以目標之志創造。</span>
+      <span class="hero-jade-text">智者，明也。珺者，美玉也。</span>
+    </p>
+
+    <!-- Bio -->
+    <p class="hero-bio" data-en>
+      CS undergraduate at McMaster University. I build software that matters — from AI-powered mobile apps to systems that transform how businesses operate. Focused on AI integration, full-stack development, and the quiet ambition to found something worth building.
+    </p>
+    <p class="hero-bio" data-zh>
+      麥克馬斯特大學電腦科學在讀生。我構建有意義的軟體——從人工智能驅動的移動應用，到改變企業營運方式的系統。專注於人工智能整合、全端開發，以及創立值得構建之事業的平靜抱負。
+    </p>
+
+    <div class="hero-links">
+      <a href="mailto:zhanz695@mcmaster.ca">zhanz695@mcmaster.ca</a>
+      <a href="https://github.com/zhijunzhang301-creator" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/zhijun-zhang" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <div class="scroll-hint-line"></div>
+    <span data-en>scroll</span>
+    <span data-zh>下滑</span>
+  </div>
+</section>
+
+<hr class="jade-rule">
+
+<!-- ══ ABOUT ══════════════════════════════════════════════════ -->
+<section id="about">
+  <div class="section-inner">
+
+    <div class="section-label reveal">
+      <span class="section-label-roman">II.</span>
+      <div class="section-label-line"></div>
+      <span class="section-label-title" data-en>About</span>
+      <span class="section-label-title" data-zh>關於</span>
+    </div>
+
+    <div class="about-grid">
+
+      <div class="about-text">
+        <!-- EN paragraphs -->
+        <p class="reveal reveal-delay-1" data-en>
+          I'm a builder first. Currently studying Computer Science at McMaster University (graduating 2029), I've already shipped production software used by real people — including HugyPro, a cross-platform mental health app with 500+ users and a 4.6★ App Store rating.
+        </p>
+        <p class="reveal reveal-delay-2" data-en>
+          My work sits at the intersection of AI, mobile development, and operational efficiency. I believe the most interesting problems are the ones that sit between disciplines — and that the best tools are the ones people forget they're using.
+        </p>
+        <p class="reveal reveal-delay-3" data-en>
+          I'm building toward founding something. This is the quiet prologue.
+        </p>
+
+        <!-- ZH paragraphs -->
+        <p class="reveal reveal-delay-1" data-zh>
+          我首先是一名建造者。目前就讀麥克馬斯特大學電腦科學系（2029年畢業），我已交付為真實用戶服務的正式軟體——包括HugyPro，一款擁有500+用戶、App Store評分4.6★的跨平台心理健康應用。
+        </p>
+        <p class="reveal reveal-delay-2" data-zh>
+          我的工作處於人工智能、移動開發與營運效率的交叉點。我相信最有趣的問題往往存在於學科之間——而最好的工具，是讓人們忘記自己在使用的那種。
+        </p>
+        <p class="reveal reveal-delay-3" data-zh>
+          我正在朝著創立某件事努力。這是靜默的序章。
+        </p>
+
+        <div class="skills-list reveal reveal-delay-4">
+          <span class="skill-tag">Flutter · Dart</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Firebase</span>
+          <span class="skill-tag">LLM / NLP</span>
+          <span class="skill-tag">Google Gemini</span>
+          <span class="skill-tag">OpenAI SDK</span>
+          <span class="skill-tag">RESTful API</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">C · Haskell</span>
+          <span class="skill-tag">Git · Linux</span>
+        </div>
+      </div>
+
+      <div class="about-name-block reveal reveal-delay-2">
+        <span class="jade-char">智　珺</span>
+        <div class="jade-meaning">
+          <!-- EN meanings -->
+          <span class="jade-meaning-line" data-delay="0"   data-en>智 — Zhì</span>
+          <span class="jade-meaning-line" data-delay="100" data-en>Wisdom. Clarity of mind.</span>
+          <span class="jade-meaning-line" data-delay="200" data-en>To see through complexity.</span>
+          <br>
+          <span class="jade-meaning-line" data-delay="350" data-en>珺 — Jùn</span>
+          <span class="jade-meaning-line" data-delay="450" data-en>Beautiful jade. Luminous.</span>
+          <span class="jade-meaning-line" data-delay="550" data-en>Rare quality, quiet radiance.</span>
+
+          <!-- ZH meanings -->
+          <span class="jade-meaning-line" data-delay="0"   data-zh>智 — zhì</span>
+          <span class="jade-meaning-line" data-delay="100" data-zh>智慧，心之澄明。</span>
+          <span class="jade-meaning-line" data-delay="200" data-zh>洞察複雜，見微知著。</span>
+          <br>
+          <span class="jade-meaning-line" data-delay="350" data-zh>珺 — jùn</span>
+          <span class="jade-meaning-line" data-delay="450" data-zh>美玉，光潤溫雅。</span>
+          <span class="jade-meaning-line" data-delay="550" data-zh>質稀而耀，靜而生輝。</span>
+        </div>
+
+        <div style="margin-top:2rem">
+          <span class="award-chip">USACO Gold</span>
+          <span class="award-chip">IgniteCS 2nd Prize</span>
+          <span class="award-chip">FCST 2024 Publication</span>
+          <span class="award-chip">President's Volunteer Service Award</span>
+          <span class="award-chip">Girls Coding Club President</span>
+          <span class="award-chip" data-en>Ranked 1st · 98.7%</span>
+          <span class="award-chip" data-zh>全校第一 · 98.7%</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="jade-rule">
+
+<!-- ══ PROJECTS ════════════════════════════════════════════ -->
+<section id="projects">
+  <div class="section-inner">
+
+    <div class="section-label reveal">
+      <span class="section-label-roman">III.</span>
+      <div class="section-label-line"></div>
+      <span class="section-label-title" data-en>Projects</span>
+      <span class="section-label-title" data-zh>作品</span>
+    </div>
+
+    <p class="section-sub reveal">
+      <span data-en>Selected work — ongoing.</span>
+      <span data-zh>精選作品——持續更新。</span>
+    </p>
+
+    <div class="projects-grid">
+
+      <a class="project-card reveal reveal-delay-1" href="https://apps.apple.com/ca/app/hugypro/id6479186220" target="_blank">
+        <div class="project-meta">2023 — 2024 · Featured</div>
+        <div class="project-title">HugyPro</div>
+        <div class="project-desc" data-en>
+          Cross-platform mental health app shipped solo to the iOS App Store. 500+ registered users, 4.6★ rating, 99.7% uptime. Integrated Google Gemini LLMs for adaptive conversational AI — beta tests showed ~34% reduction in self-reported loneliness scores.
+        </div>
+        <div class="project-desc" data-zh>
+          獨立開發並上架 iOS App Store 的跨平台心理健康應用。500+ 註冊用戶，評分 4.6★，上線率 99.7%。整合 Google Gemini 大型語言模型，實現自適應對話式 AI——測試顯示孤獨感評分降低約 34%。
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">Flutter</span>
+          <span class="project-tag">Firebase</span>
+          <span class="project-tag">Gemini AI</span>
+          <span class="project-tag">NLP</span>
+          <span class="project-tag">iOS</span>
+        </div>
+      </a>
+
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-meta" data-en>2024 · Marriott Hamilton</div>
+        <div class="project-meta" data-zh>2024 · 萬豪酒店・漢密爾頓</div>
+        <div class="project-title" data-en>Hotel Intelligence OS</div>
+        <div class="project-title" data-zh>酒店智慧運營系統</div>
+        <div class="project-desc" data-en>
+          Suite of operational systems built for TownePlace Suites — attendance management, real-time inventory with predictive restocking, and AI-assisted front-desk workflows. Saved ~6 hours/week of admin overhead, reduced over-ordering costs by ~18%.
+        </div>
+        <div class="project-desc" data-zh>
+          為萬豪 TownePlace Suites 構建的一套營運系統——涵蓋考勤管理、具備預測補貨功能的即時庫存，以及 AI 輔助前台流程。每週節省約 6 小時行政開銷，過度採購成本降低約 18%。
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Automation</span>
+          <span class="project-tag">AI Integration</span>
+          <span class="project-tag">Operations</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-3">
+        <div class="project-meta" data-en>2024 · Ongoing</div>
+        <div class="project-meta" data-zh>2024 · 持續進行中</div>
+        <div class="project-title" data-en>Hotel Attendance System</div>
+        <div class="project-title" data-zh>酒店考勤管理系統</div>
+        <div class="project-desc" data-en>
+          Automated attendance tracking system replacing manual spreadsheet processes. Eliminated error-prone workflows and freed significant operational time across front-desk and back-office teams.
+        </div>
+        <div class="project-desc" data-zh>
+          自動化考勤追蹤系統，取代手動電子試算表流程。消除易出錯的工作環節，為前台及後台團隊釋放大量營運時間。
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Data Systems</span>
+          <span class="project-tag">Automation</span>
+        </div>
+      </div>
+
+      <div class="project-card project-card--placeholder reveal reveal-delay-4">
+        <div>
+          <div class="project-placeholder-label" data-en>MORE IN PROGRESS</div>
+          <div class="project-placeholder-label" data-zh>更多作品醞釀中</div>
+          <div class="project-placeholder-sub" data-en>The next thing is being built.</div>
+          <div class="project-placeholder-sub" data-zh>下一件作品，正在構建。</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="jade-rule">
+
+<!-- ══ EXPERIENCE ══════════════════════════════════════════ -->
+<section id="experience">
+  <div class="section-inner">
+
+    <div class="section-label reveal">
+      <span class="section-label-roman">IV.</span>
+      <div class="section-label-line"></div>
+      <span class="section-label-title" data-en>Experience</span>
+      <span class="section-label-title" data-zh>經歷</span>
+    </div>
+
+    <div class="exp-list">
+
+      <!-- Marriott -->
+      <div class="exp-item reveal reveal-delay-1">
+        <div class="exp-date">Nov 2024<br>— Present</div>
+        <div class="exp-content">
+          <div class="exp-title" data-en>Social Media & AI Specialist · Accounting Associate</div>
+          <div class="exp-title" data-zh>社交媒體及人工智能專員 · 會計助理</div>
+          <div class="exp-org" data-en>TownePlace Suites by Marriott, Hamilton ON</div>
+          <div class="exp-org" data-zh>萬豪 TownePlace Suites，安大略省漢密爾頓</div>
+          <ul class="exp-bullets" data-en>
+            <li>Designed & deployed automated Hotel Attendance Management System in Python — saving ~6 hrs/week</li>
+            <li>Built real-time inventory management with predictive restocking, reducing over-ordering by ~18%</li>
+            <li>Led end-to-end digital transformation: AI-assisted workflows across front-desk and back-office</li>
+            <li>Drove +42% organic social media engagement in 3 months via data-driven content strategy</li>
+          </ul>
+          <ul class="exp-bullets" data-zh>
+            <li>設計並部署 Python 自動化考勤管理系統——每週節省約 6 小時</li>
+            <li>構建具備預測補貨功能的即時庫存管理，過度採購率降低約 18%</li>
+            <li>主導端到端數位化轉型：在前台及後台全面實施 AI 輔助工作流程</li>
+            <li>透過數據驅動的內容策略，3 個月內自然社群媒體互動率提升 42%</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Mobile Dev -->
+      <div class="exp-item reveal reveal-delay-2">
+        <div class="exp-date">Jan 2023<br>— Oct 2024</div>
+        <div class="exp-content">
+          <div class="exp-title" data-en>Mobile Application Developer</div>
+          <div class="exp-title" data-zh>移動應用開發者</div>
+          <div class="exp-org" data-en>Self-Employed, Hamilton ON</div>
+          <div class="exp-org" data-zh>獨立開發，安大略省漢密爾頓</div>
+          <ul class="exp-bullets" data-en>
+            <li>Sole architect and developer of HugyPro — shipped to App Store, 500+ users, 4.6★ rating</li>
+            <li>Integrated Google Gemini LLMs; beta tests showed ~34% reduction in self-reported loneliness</li>
+            <li>IgniteCS 2024 — 2nd Prize (Top 6%); peer-reviewed paper published at FCST 2024</li>
+          </ul>
+          <ul class="exp-bullets" data-zh>
+            <li>HugyPro 唯一架構師及開發者——上架 App Store，500+ 用戶，評分 4.6★</li>
+            <li>整合 Google Gemini 大型語言模型；測試顯示孤獨感評分降低約 34%</li>
+            <li>IgniteCS 2024 二等獎（前 6%）；論文發表於 FCST 2024 同儕評審會議</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Coding Club -->
+      <div class="exp-item reveal reveal-delay-3">
+        <div class="exp-date">2023 — 2025</div>
+        <div class="exp-content">
+          <div class="exp-title" data-en>Girls Coding Club President</div>
+          <div class="exp-title" data-zh>女生編程俱樂部主席</div>
+          <div class="exp-org" data-en>Columbia International College, Hamilton ON</div>
+          <div class="exp-org" data-zh>哥倫比亞國際學院，安大略省漢密爾頓</div>
+          <ul class="exp-bullets" data-en>
+            <li>Led bi-weekly workshops; mentored 30+ members in Python, OOP, and software development</li>
+            <li>Graduated ranked 1st in school with 98.7% average</li>
+          </ul>
+          <ul class="exp-bullets" data-zh>
+            <li>主持每兩週一次的工作坊；指導 30+ 名成員學習 Python、物件導向程式設計及軟體開發</li>
+            <li>以 98.7% 的平均分全校第一名畢業</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- McMaster -->
+      <div class="exp-item reveal reveal-delay-4">
+        <div class="exp-date" data-en>Expected<br>May 2029</div>
+        <div class="exp-date" data-zh>預計<br>2029年5月</div>
+        <div class="exp-content">
+          <div class="exp-title" data-en>B.Sc. Computer Science</div>
+          <div class="exp-title" data-zh>計算機科學理學士</div>
+          <div class="exp-org" data-en>McMaster University, Hamilton ON</div>
+          <div class="exp-org" data-zh>麥克馬斯特大學，安大略省漢密爾頓</div>
+          <ul class="exp-bullets" data-en>
+            <li>Coursework: Python, Haskell, C/Unix/Git, Software Design, Data Structures & Algorithms</li>
+            <li>USACO Gold competitor · President's Volunteer Service Award · Coolest Projects Award</li>
+          </ul>
+          <ul class="exp-bullets" data-zh>
+            <li>課程：Python、Haskell、C/Unix/Git、軟體設計、資料結構與演算法</li>
+            <li>USACO 黃金組參賽者 · 總統志願服務獎 · 最酷專案獎</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="jade-rule">
+
+<!-- ══ CONTACT ══════════════════════════════════════════════ -->
+<section id="contact">
+  <div class="section-inner" style="padding-bottom:4rem">
+
+    <div class="section-label reveal">
+      <span class="section-label-roman">V.</span>
+      <div class="section-label-line"></div>
+      <span class="section-label-title" data-en>Contact</span>
+      <span class="section-label-title" data-zh>聯絡</span>
+    </div>
+
+    <h2 class="section-heading reveal" data-en>Let's build something.</h2>
+    <h2 class="section-heading reveal" data-zh>讓我們共同構建。</h2>
+
+    <p class="reveal reveal-delay-1" style="max-width:480px;color:var(--paper-dim);font-size:0.95rem;margin-bottom:2.5rem;line-height:1.85" data-en>
+      I'm open to collaboration, partnership, or just a good conversation. If you're working on something interesting — reach out.
+    </p>
+    <p class="reveal reveal-delay-1" style="max-width:480px;color:var(--paper-dim);font-size:0.95rem;margin-bottom:2.5rem;line-height:1.85" data-zh>
+      我歡迎合作、夥伴關係，或僅僅是一次深刻的對話。若您正在從事有趣的事情——請與我聯繫。
+    </p>
+
+    <div class="hero-links reveal reveal-delay-2">
+      <a href="mailto:zhanz695@mcmaster.ca">zhanz695@mcmaster.ca</a>
+      <a href="https://github.com/zhijunzhang301-creator" target="_blank">GitHub →</a>
+      <a href="https://linkedin.com/in/zhijun-zhang" target="_blank">LinkedIn →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ FOOTER ════════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-left">
+    <span data-en>Hamilton, ON · MMXXV · <span>智珺</span></span>
+    <span data-zh>漢密爾頓，安大略 · MMXXV · <span>智珺</span></span>
+  </div>
+  <div class="footer-right">
+    <a href="#hero"       data-en>↑ Top</a>       <a href="#hero"       data-zh>↑ 頂部</a>
+    <a href="#about"      data-en>About</a>        <a href="#about"      data-zh>關於</a>
+    <a href="#projects"   data-en>Projects</a>     <a href="#projects"   data-zh>作品</a>
+    <a href="#experience" data-en>Experience</a>   <a href="#experience" data-zh>經歷</a>
+  </div>
+</footer>
+
+<!-- ══ SCRIPTS ═══════════════════════════════════════════════ -->
+<script>
+  // ── Custom cursor ──────────────────────────────────────────
+  const cursor = document.getElementById('cursor');
+  let mx = 0, my = 0, cx = 0, cy = 0;
+  document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+  (function loop() {
+    cx += (mx - cx) * 0.18;
+    cy += (my - cy) * 0.18;
+    cursor.style.left = cx + 'px';
+    cursor.style.top  = cy + 'px';
+    requestAnimationFrame(loop);
+  })();
+
+  document.querySelectorAll('a, button, .project-card, .skill-tag').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      cursor.style.width   = '20px';
+      cursor.style.height  = '20px';
+      cursor.style.opacity = '0.5';
+    });
+    el.addEventListener('mouseleave', () => {
+      cursor.style.width   = '6px';
+      cursor.style.height  = '6px';
+      cursor.style.opacity = '1';
+    });
+  });
+
+  // ── Scroll reveal ──────────────────────────────────────────
+  const revealObs = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+  // ── Jade-meaning stagger ───────────────────────────────────
+  const jadeMeaningObs = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.jade-meaning-line').forEach(line => {
+          const delay = parseInt(line.dataset.delay || 0);
+          setTimeout(() => line.classList.add('visible'), delay + 200);
+        });
+        jadeMeaningObs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  document.querySelectorAll('.about-name-block').forEach(el => jadeMeaningObs.observe(el));
+
+  // ── Active nav highlight ───────────────────────────────────
+  const sections = document.querySelectorAll('section[id]');
+  const navObs = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        document.querySelectorAll('.nav-links a').forEach(a => {
+          a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id);
+        });
+      }
+    });
+  }, { threshold: 0.4 });
+  sections.forEach(s => navObs.observe(s));
+
+  // ── Hero name width-animating flip ────────────────────────
+  const nameFlip = document.getElementById('nameFlip');
+
+  function measureTextWidth(text, el) {
+    // Create an invisible span with same font/size as the element, measure it
+    const probe = document.createElement('span');
+    probe.style.cssText = `
+      position:absolute; visibility:hidden; white-space:nowrap;
+      font-family:${getComputedStyle(el).fontFamily};
+      font-size:${getComputedStyle(el).fontSize};
+      font-weight:${getComputedStyle(el).fontWeight};
+      letter-spacing:${getComputedStyle(el).letterSpacing};
+    `;
+    probe.textContent = text;
+    document.body.appendChild(probe);
+    const w = probe.getBoundingClientRect().width;
+    document.body.removeChild(probe);
+    return w;
+  }
+
+  function initNameFlip() {
+    if (!nameFlip) return;
+    const enSpan  = nameFlip.querySelector('.name-en-face');
+    const zhSpan  = nameFlip.querySelector('.name-zh-face');
+
+    // Measure widths at current computed font size
+    const wEn = measureTextWidth('Bernice', enSpan);
+    const wZh = measureTextWidth('Zhìjùn',  zhSpan);
+
+    // Set initial width to EN
+    nameFlip.style.width = wEn + 'px';
+
+    const heroH1 = nameFlip.closest('.hero-name-en');
+    heroH1.addEventListener('mouseenter', () => {
+      nameFlip.style.width = wZh + 'px';
+    });
+    heroH1.addEventListener('mouseleave', () => {
+      nameFlip.style.width = wEn + 'px';
+    });
+  }
+
+  // Run after fonts load for accurate measurement
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(initNameFlip);
+  } else {
+    window.addEventListener('load', initNameFlip);
+  }
+
+  // ── Language toggle ────────────────────────────────────────
+  const langBtn = document.getElementById('langToggle');
+  let isZH = false;
+
+  langBtn.addEventListener('click', () => {
+    isZH = !isZH;
+    document.body.classList.toggle('zh', isZH);
+    document.documentElement.lang = isZH ? 'zh-Hant' : 'en';
+    langBtn.textContent = isZH ? '中 / EN' : 'EN / 中';
+
+    // Re-trigger jade meaning animation for visible blocks
+    document.querySelectorAll('.about-name-block').forEach(block => {
+      block.querySelectorAll('.jade-meaning-line').forEach((line, i) => {
+        line.classList.remove('visible');
+        const delay = parseInt(line.dataset.delay || 0);
+        setTimeout(() => line.classList.add('visible'), delay + 100);
+      });
+    });
+  });
+
+  // ── Day / Night toggle ─────────────────────────────────────
+  const modeBtn = document.getElementById('modeToggle');
+  let isDay = false;
+
+  modeBtn.addEventListener('click', () => {
+    isDay = !isDay;
+    document.body.classList.toggle('day', isDay);
+    modeBtn.textContent = isDay ? '☀' : '☽';
+  });
+</script>
+</body>
+</html>

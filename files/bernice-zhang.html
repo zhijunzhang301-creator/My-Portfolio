@@ -49,25 +49,18 @@
     <!-- English hero name -->
     <h1 class="hero-name-en" data-en>
       I'm
-      <span class="hero-name-flip">
+      <span class="hero-name-flip" id="nameFlip">
         <span class="hero-name-flip-inner">
-          <span>Bernice</span>
-          <span>智珺</span>
+          <span class="name-en-face">Bernice</span>
+          <span class="name-zh-face">Zhìjùn</span>
         </span>
       </span>
       Zhang.
     </h1>
 
-    <!-- Chinese hero name -->
+    <!-- Chinese hero name — static, no flip -->
     <h1 class="hero-name-en" data-zh>
-      我是張
-      <span class="hero-name-flip">
-        <span class="hero-name-flip-inner">
-          <span>智珺</span>
-          <span>Bernice</span>
-        </span>
-      </span>
-      。
+      我是張智珺。
     </h1>
 
     <!-- Tagline -->
@@ -82,7 +75,7 @@
       CS undergraduate at McMaster University. I build software that matters — from AI-powered mobile apps to systems that transform how businesses operate. Focused on AI integration, full-stack development, and the quiet ambition to found something worth building.
     </p>
     <p class="hero-bio" data-zh>
-      麥克馬斯特大學計算機科學在讀生。我構建有意義的軟件——從人工智能驅動的移動應用，到改變企業運營方式的系統。專注於人工智能整合、全棧開發，以及創立值得構建之事業的平靜抱負。
+      麥克馬斯特大學電腦科學在讀生。我構建有意義的軟體——從人工智能驅動的移動應用，到改變企業營運方式的系統。專注於人工智能整合、全端開發，以及創立值得構建之事業的平靜抱負。
     </p>
 
     <div class="hero-links">
@@ -128,10 +121,10 @@
 
         <!-- ZH paragraphs -->
         <p class="reveal reveal-delay-1" data-zh>
-          我首先是一名建造者。目前就讀麥克馬斯特大學電腦科學系（2029年畢業），我已交付為真實用戶服務的正式軟件——包括HugyPro，一款擁有500+用戶、App Store評分4.6★的跨平台心理健康應用。
+          我首先是一名建造者。目前就讀麥克馬斯特大學電腦科學系（2029年畢業），我已交付為真實用戶服務的正式軟體——包括HugyPro，一款擁有500+用戶、App Store評分4.6★的跨平台心理健康應用。
         </p>
         <p class="reveal reveal-delay-2" data-zh>
-          我的工作處於人工智能、移動開發與運營效率的交叉點。我相信最有趣的問題往往存在於學科之間——而最好的工具，是讓人們忘記自己在使用的那種。
+          我的工作處於人工智能、移動開發與營運效率的交叉點。我相信最有趣的問題往往存在於學科之間——而最好的工具，是讓人們忘記自己在使用的那種。
         </p>
         <p class="reveal reveal-delay-3" data-zh>
           我正在朝著創立某件事努力。這是靜默的序章。
@@ -215,7 +208,7 @@
           Cross-platform mental health app shipped solo to the iOS App Store. 500+ registered users, 4.6★ rating, 99.7% uptime. Integrated Google Gemini LLMs for adaptive conversational AI — beta tests showed ~34% reduction in self-reported loneliness scores.
         </div>
         <div class="project-desc" data-zh>
-          獨立開發並上架 iOS App Store 的跨平台心理健康應用。500+ 注冊用戶，評分 4.6★，在線率 99.7%。整合 Google Gemini 大語言模型，實現自適應對話式 AI——測試顯示孤獨感評分降低約 34%。
+          獨立開發並上架 iOS App Store 的跨平台心理健康應用。500+ 註冊用戶，評分 4.6★，上線率 99.7%。整合 Google Gemini 大型語言模型，實現自適應對話式 AI——測試顯示孤獨感評分降低約 34%。
         </div>
         <div class="project-tags">
           <span class="project-tag">Flutter</span>
@@ -235,7 +228,7 @@
           Suite of operational systems built for TownePlace Suites — attendance management, real-time inventory with predictive restocking, and AI-assisted front-desk workflows. Saved ~6 hours/week of admin overhead, reduced over-ordering costs by ~18%.
         </div>
         <div class="project-desc" data-zh>
-          為萬豪 TownePlace Suites 構建的一套運營系統——涵蓋考勤管理、具備預測補貨功能的實時庫存，以及 AI 輔助前台流程。每週節省約 6 小時行政開銷，過度採購成本降低約 18%。
+          為萬豪 TownePlace Suites 構建的一套營運系統——涵蓋考勤管理、具備預測補貨功能的即時庫存，以及 AI 輔助前台流程。每週節省約 6 小時行政開銷，過度採購成本降低約 18%。
         </div>
         <div class="project-tags">
           <span class="project-tag">Python</span>
@@ -254,7 +247,7 @@
           Automated attendance tracking system replacing manual spreadsheet processes. Eliminated error-prone workflows and freed significant operational time across front-desk and back-office teams.
         </div>
         <div class="project-desc" data-zh>
-          自動化考勤追蹤系統，取代手動電子表格流程。消除易出錯的工作環節，為前台及後台團隊釋放大量運營時間。
+          自動化考勤追蹤系統，取代手動電子試算表流程。消除易出錯的工作環節，為前台及後台團隊釋放大量營運時間。
         </div>
         <div class="project-tags">
           <span class="project-tag">Python</span>
@@ -307,9 +300,9 @@
           </ul>
           <ul class="exp-bullets" data-zh>
             <li>設計並部署 Python 自動化考勤管理系統——每週節省約 6 小時</li>
-            <li>構建具備預測補貨功能的實時庫存管理，過度採購率降低約 18%</li>
-            <li>主導端到端數字化轉型：在前台及後台全面實施 AI 輔助工作流程</li>
-            <li>通過數據驅動的內容策略，3 個月內自然社交媒體互動率提升 42%</li>
+            <li>構建具備預測補貨功能的即時庫存管理，過度採購率降低約 18%</li>
+            <li>主導端到端數位化轉型：在前台及後台全面實施 AI 輔助工作流程</li>
+            <li>透過數據驅動的內容策略，3 個月內自然社群媒體互動率提升 42%</li>
           </ul>
         </div>
       </div>
@@ -329,8 +322,8 @@
           </ul>
           <ul class="exp-bullets" data-zh>
             <li>HugyPro 唯一架構師及開發者——上架 App Store，500+ 用戶，評分 4.6★</li>
-            <li>整合 Google Gemini 大語言模型；測試顯示孤獨感評分降低約 34%</li>
-            <li>IgniteCS 2024 二等獎（前 6%）；論文發表於 FCST 2024 同行評審會議</li>
+            <li>整合 Google Gemini 大型語言模型；測試顯示孤獨感評分降低約 34%</li>
+            <li>IgniteCS 2024 二等獎（前 6%）；論文發表於 FCST 2024 同儕評審會議</li>
           </ul>
         </div>
       </div>
@@ -348,7 +341,7 @@
             <li>Graduated ranked 1st in school with 98.7% average</li>
           </ul>
           <ul class="exp-bullets" data-zh>
-            <li>主持每兩週一次的工作坊；指導 30+ 名成員學習 Python、面向對象編程及軟件開發</li>
+            <li>主持每兩週一次的工作坊；指導 30+ 名成員學習 Python、物件導向程式設計及軟體開發</li>
             <li>以 98.7% 的平均分全校第一名畢業</li>
           </ul>
         </div>
@@ -368,8 +361,8 @@
             <li>USACO Gold competitor · President's Volunteer Service Award · Coolest Projects Award</li>
           </ul>
           <ul class="exp-bullets" data-zh>
-            <li>課程：Python、Haskell、C/Unix/Git、軟件設計、數據結構與算法</li>
-            <li>USACO 黃金組參賽者 · 總統志願服務獎 · 最酷項目獎</li>
+            <li>課程：Python、Haskell、C/Unix/Git、軟體設計、資料結構與演算法</li>
+            <li>USACO 黃金組參賽者 · 總統志願服務獎 · 最酷專案獎</li>
           </ul>
         </div>
       </div>
@@ -488,6 +481,54 @@
     });
   }, { threshold: 0.4 });
   sections.forEach(s => navObs.observe(s));
+
+  // ── Hero name width-animating flip ────────────────────────
+  const nameFlip = document.getElementById('nameFlip');
+
+  function measureTextWidth(text, el) {
+    // Create an invisible span with same font/size as the element, measure it
+    const probe = document.createElement('span');
+    probe.style.cssText = `
+      position:absolute; visibility:hidden; white-space:nowrap;
+      font-family:${getComputedStyle(el).fontFamily};
+      font-size:${getComputedStyle(el).fontSize};
+      font-weight:${getComputedStyle(el).fontWeight};
+      letter-spacing:${getComputedStyle(el).letterSpacing};
+    `;
+    probe.textContent = text;
+    document.body.appendChild(probe);
+    const w = probe.getBoundingClientRect().width;
+    document.body.removeChild(probe);
+    return w;
+  }
+
+  function initNameFlip() {
+    if (!nameFlip) return;
+    const enSpan  = nameFlip.querySelector('.name-en-face');
+    const zhSpan  = nameFlip.querySelector('.name-zh-face');
+
+    // Measure widths at current computed font size
+    const wEn = measureTextWidth('Bernice', enSpan);
+    const wZh = measureTextWidth('Zhìjùn',  zhSpan);
+
+    // Set initial width to EN
+    nameFlip.style.width = wEn + 'px';
+
+    const heroH1 = nameFlip.closest('.hero-name-en');
+    heroH1.addEventListener('mouseenter', () => {
+      nameFlip.style.width = wZh + 'px';
+    });
+    heroH1.addEventListener('mouseleave', () => {
+      nameFlip.style.width = wEn + 'px';
+    });
+  }
+
+  // Run after fonts load for accurate measurement
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(initNameFlip);
+  } else {
+    window.addEventListener('load', initNameFlip);
+  }
 
   // ── Language toggle ────────────────────────────────────────
   const langBtn = document.getElementById('langToggle');
